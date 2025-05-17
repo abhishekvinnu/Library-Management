@@ -1,0 +1,41 @@
+mysql> select*from credentials;
++----------------+--------------+----------+
+| name           | username     | password |
++----------------+--------------+----------+
+| Abhishek Vinnu | abhishek@jss | jss123   |
+| Pablo          | pablo@jss    | jss123   |
++----------------+--------------+----------+
+
+mysql> desc entries;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| studname  | varchar(100) | YES  |     | NULL    |       |
+| studusn   | varchar(100) | NO   | PRI | NULL    |       |
+| bookid    | varchar(100) | YES  | MUL | NULL    |       |
+| bookname  | varchar(100) | YES  |     | NULL    |       |
+| issuedate | date         | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+
+mysql> desc books;
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| bookid   | varchar(100) | NO   | PRI | NULL    |       |
+| bookname | varchar(100) | YES  |     | NULL    |       |
++----------+--------------+------+-----+---------+-------+
+
+mysql> select*from books;
++-----------+--------------------------+
+| bookid    | bookname                 |
++-----------+--------------------------+
+| ADE401F   | Digital Fundamentals     |
+| AI401     | Artificial Intelligence  |
+| DA401     | Data Analysis            |
+| DB403     | Database System Concepts |
+| JavaJs13  | Java Fundamentals        |
+| MC405A    | Microcontrollers         |
+| OOPJ406   | OOP with Java            |
+| Py401     | Python                   |
+| Webdev406 | Web development          |
++-----------+--------------------------+
